@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Dialog Box.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+margin_right = 1024.0
+margin_bottom = 599.0
+
+[node name="Dialog Box" type="ColorRect" parent="."]
+margin_left = 181.0
+margin_top = 157.0
+margin_right = 811.0
+margin_bottom = 288.0
+color = Color( 0.415686, 0.364706, 0.0980392, 1 )
+script = ExtResource( 1 )
+dialogPath = "res://FileDialog0.json"
+
+[node name="Name" type="RichTextLabel" parent="Dialog Box"]
+margin_left = 37.0
+margin_top = 40.0
+margin_right = 150.0
+margin_bottom = 80.0
+
+[node name="Text" type="RichTextLabel" parent="Dialog Box"]
+margin_left = 334.0
+margin_top = 42.0
+margin_right = 579.0
+margin_bottom = 82.0
+
+[node name="Timer" type="Timer" parent="Dialog Box"]
